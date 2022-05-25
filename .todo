@@ -1,9 +1,11 @@
 Proyecto final: 
-    ☐ Reordenar todo el css @started(22/05/25 02:20)
+    ✔ Reordenar todo el css @started(22/05/25 02:20) @done(22/05/25 04:21) @lasted(2h1m59s)
     index.html: 
         ☐ Añadir contenido
     productos.html:
         ☐ Rehacer la pagina entera con javascript en vez de frame/frameset
         ☐ Completar el inicio
         ☐ añadir más entradas de productos
+    contactanos.html: 
+        ☐ Rehacer el form con flex en vez de tablas
         
