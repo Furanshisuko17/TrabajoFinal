@@ -37,7 +37,7 @@ body {
 }
 
 .contact fieldset {
-    padding:10px 50px
+    padding:10px 40px
 }
 
 .contact tr {
@@ -45,6 +45,14 @@ body {
 }
 .contact td {
     vertical-align:baseline;
+}
+
+.contact .button-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
 }
 
 
