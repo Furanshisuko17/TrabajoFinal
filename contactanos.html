@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cont&aacute;ctanos</title>
+
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/content.css">
+
+    </head>
+
+    <body>
+        
+        <div class="navbar" >
+
+            <a class="none" style="float:left;padding:0px" href="index.html" title="Computadoras">
+                <img src="img/computadora.png" alt="Logo de la empresa">
+            </a>
+            
+            <a class="name" href="index.html" title="Computadoras">
+                <b>Computadoras</b>
+            </a>
+
+            <a style="background-color:rgb(48, 48, 48);" href="#" title="Cont&aacute;ctanos">Cont&aacute;ctanos</a>
+            <a href="productos.html" title="Productos que ofrecemos">Productos</a> 
+            <a href="servicios.html" title="Nuestros servicios">Servicios</a>
+            <a href="nosotros.html" title="Acerca de nosotros">Nosotros</a>
+            <a href="index.html" title="Inicio">Inicio</a>
+
+        </div>
+
+        <div class="content" style="padding-top:2em;padding-bottom:2em">
+
+            <form class="contact" action="#">
+        
+                <fieldset>
+                    <legend>Cont&aacute;ctanos</legend>
+        
+                    <table> <!-- Tabla del form -->
+                        <colgroup>
+                            <col style="width:50%">
+                            <col style="width:50%">
+                        </colgroup>
+        
+                        <tr>
+                            <td>Nombres:</td>
+                            <td><input type="text" size="21px" name="nombres"></td>
+                        </tr>
+        
+                        <tr>
+                            <td>Apellidos:</td>
+                            <td><input type="text" size="21px" name="apellidos"></td>
+                        </tr>
+        
+                        <tr>
+                            <td>DNI:</td>
+                            <td><input type="number" size="21px" name="dni"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Correo:</td>
+                            <td><input type="email" size="21px" name="correo"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Celular:</td>
+                            <td><input type="number" size="21px" name="celular"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Estado civil:</td>
+                            <td>
+                                <select name="estado_civil">
+                                    <option hidden disabled selected value></option>
+                                    <option value="soltero">Soltero</option>
+                                    <option value="casado">Casado</option>
+                                    <option value="viudo">Viudo</option>
+                                    <option value="divorciado">Divorciado</option>            
+                                </select>
+                            </td>
+                        </tr>
+        
+
+                        <tr>
+                            <td rowspan="3">Tipo de mensaje:</td>
+                            <td>
+                                <input type="radio" id="consulta" name="tipo_mensaje">
+                                <label for="consulta">Consulta</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="solicitud" name="tipo_mensaje">
+                                <label for="solicitud">Solicitud</label>
+        
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="reclamo" name="tipo_mensaje">
+                                <label for="efectivo">Reclamo</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Asunto:</td>
+                            <td><input type="text" size="21px" name="asunto"></td>
+                        </tr>
+        
+                        <tr>
+                            <td style="vertical-align: top;">
+                                Mensaje:
+                            </td>
+                            <td>
+                                <textarea style="resize:vertical" name="mensaje" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+        
+                    </table>
+        
+                    <table align="center"> <!-- boton de enviar y solo -->
+                        <tr>
+                            <td><input type="reset" name="limpiar" value="LIMPIAR"></td>
+                            <td><input type="submit" name="enviar" value="ENVIAR"></td>
+                        </tr>
+                    </table>
+        
+                </fieldset>
+            </form>
+
+        </div>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,37 @@
+.navbar{
+    box-sizing: content-box;
+    overflow:hidden;
+    background-color: red;
+    padding: 0px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    width: calc(100% - 20px) !important;
+
+}
+
+.navbar a{
+    float: right;
+    display: block;
+    text-align: center;
+    padding:21px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+}
+
+.navbar .name{
+    float:left;
+    color:white;
+    text-align: center;
+    padding:8px 16px;
+    margin:0px;
+    font-size: 2.5em;
+}
+
+.navbar img{
+    float:left;
+    max-width: auto;
+    max-height: 3em;
+}
