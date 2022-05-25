@@ -11,6 +11,13 @@ body {
     text-decoration: none;
 }
 
+iframe {
+    display: block; 
+    width:100% ;
+    height: 100vh;
+    border: none;
+}
+
 .content{
     margin-top:65px;
     display: flex;
@@ -53,6 +60,30 @@ body {
     justify-content: center;
     gap: 20px;
 
+}
+
+
+.productbar{
+    margin-top: 65px;
+    box-sizing: border-box;
+    padding:0px 15px;
+    position: relative;
+    width:100%;
+    height:40px;
+    border-width:1px;
+    border-style: none;
+    border-color: rgb(117, 117, 117);
+    background-color:#303030;    
+    
+}
+
+.productbar a {
+    color:white;
+    font-weight:bold;
+    text-decoration: none;
+    float:right;
+    padding:12px 15px;
+    letter-spacing: 0.5px;
 }
 
 
