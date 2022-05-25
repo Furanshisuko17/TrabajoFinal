@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/content.css">
 
+        <script type='text/javascript' src="js/product_script.js"></script>
+
     </head>
 
 
@@ -34,20 +36,17 @@
 
         <div class="productbar">
 
-            <a style="padding-top:11px;float:left;font-size:120%" href="main.html" target="main">Inicio</a>
+            <a onclick="changeUrl('../productos/main.html')" id="main"style="padding-top:11px;float:left;font-size:120%" href="javascript:void(0);">Inicio</a>
     
-            <a href="productos/links/case.html" target="main">Cajas</a>
-            <a href="productos/links/psu.html" target="main">Fuentes de poder</a>
-            <a href="productos/links/graphiccard.html" target="main">Tarjetas gr&aacute;ficas</a>
-            <a href="productos/links/motherboard.html" target="main">Tarjetas madre</a>
-            <a href="productos/links/processor.html" target="main">Procesadores</a>
+            <a onclick="changeUrl('../productos/links/case.html')" id="case" href="javascript:void(0);"">Cajas</a>
+            <a onclick="changeUrl('../productos/links/psu.html')" id="psu" href="javascript:void(0);"">Fuentes de poder</a>
+            <a onclick="changeUrl('../productos/links/graphiccard.html')" id="graphiccard" href="javascript:void(0);"">Tarjetas gr&aacute;ficas</a>
+            <a onclick="changeUrl('../productos/links/motherboard.html')" id="motherboard" href="javascript:void(0);"">Tarjetas madre</a>
+            <a onclick="changeUrl('../productos/links/processor.html')" id="processors" href="javascript:void(0);"">Procesadores</a>
     
         </div>
 
-        <div>
-
-            
-        </div>
+        <iframe seamless name="main-content" frameborder="0" height="100%" width="100%" src="../productos/main.html" ></iframe>
                 
 
     </body>
