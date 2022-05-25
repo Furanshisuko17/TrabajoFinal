@@ -3,7 +3,7 @@ Proyecto final:
     index.html: 
         ☐ Añadir contenido
     productos.html:
-        ☐ Rehacer la pagina entera con javascript en vez de frame/frameset
+        ✔ Rehacer la pagina entera con javascript en vez de frame/frameset @done(22/05/25 10:25)
         ☐ Completar el inicio
         ☐ añadir más entradas de productos
     contactanos.html: 
