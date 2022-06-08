@@ -33,7 +33,19 @@
         <div class="content" >
             <div class="contact">
                 <fieldset>
-                    <legend><?php echo $_POST['tipo_mensaje']; ?> enviada!</legend>
+                    <?php
+                        $value = $_POST['tipo_mensaje'];
+
+                        if ($value == 'Consulta'){
+                            $legend_content = 'Consulta enviada!';
+                        }elseif ($value == 'Solicitud') {
+                            $legend_content = 'Solicitud enviada!';
+                        }elseif ($value == 'Reclamo'){
+                            $legend_content = 'Reclamo enviado!';
+                        }
+
+                    ?>
+                    <legend><?php echo $legend_content; ?></legend>
 
                     <div>
                         <label>Nombres:</label>
