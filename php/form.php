@@ -34,10 +34,9 @@
             <div class="contact">
                 <fieldset>
                     <?php
-                        echo $_POST['tipo_mensaje'];
                         $value = $_POST['tipo_mensaje'];
                     ?>
-                    <legend><?php echo $value; ?></legend>
+                    <legend><?php echo $value; ?> enviada!</legend>
 
                     <div>
                         <label>Nombres:</label>
@@ -71,7 +70,9 @@
                     </div>                   
                     <div>
                         <label>Mensaje:</label>
-                        <?php echo htmlspecialchars($_POST['mensaje']) ?>
+                        <p style="width: 50%;flex-grow: 1;"> 
+                            <?php echo htmlspecialchars($_POST['mensaje']) ?> 
+                        </p>
                     </div>
                 </fieldset>
             </div>  
