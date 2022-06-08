@@ -33,10 +33,7 @@
         <div class="content" >
             <div class="contact">
                 <fieldset>
-                    <?php
-                        $value = $_POST['tipo_mensaje'];
-                    ?>
-                    <legend><?php echo $value; ?> enviada!</legend>
+                    <legend><?php echo $_POST['tipo_mensaje']; ?> enviada!</legend>
 
                     <div>
                         <label>Nombres:</label>
