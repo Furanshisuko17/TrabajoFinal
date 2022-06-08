@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cont&aacute;ctanos</title>
-
+        <script type="text/javascript" src="https://livejs.com/live.js"></script>
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/content.css">
 
@@ -31,94 +31,73 @@
 
         </div>
 
-        <div class="content" style="padding-top:2em;padding-bottom:2em">
+        <div class="content" >
 
-            <form class="contact" action="#">
+            <form class="contact" action="#" method="POST">
         
                 <fieldset>
                     <legend>Cont&aacute;ctanos</legend>
-        
-                    <table> <!-- Tabla del form -->
-                        <colgroup>
-                            <col style="width:50%">
-                            <col style="width:50%">
-                        </colgroup>
-        
-                        <tr>
-                            <td>Nombres:</td>
-                            <td><input type="text" size="21px" name="nombres"></td>
-                        </tr>
-        
-                        <tr>
-                            <td>Apellidos:</td>
-                            <td><input type="text" size="21px" name="apellidos"></td>
-                        </tr>
-        
-                        <tr>
-                            <td>DNI:</td>
-                            <td><input type="number" size="21px" name="dni"></td>
-                        </tr>
 
-                        <tr>
-                            <td>Correo:</td>
-                            <td><input type="email" size="21px" name="correo"></td>
-                        </tr>
+                    <div>
+                        <label for="name">Nombres:</label>
+                        <input type="text" name="nombres" id="name">
+                    </div>
 
-                        <tr>
-                            <td>Celular:</td>
-                            <td><input type="number" size="21px" name="celular"></td>
-                        </tr>
+                    <div>
+                        <label for="lastname">Apellidos:</label>
+                        <input type="text" name="apellidos" id="lastname">
+                    </div>
 
-                        <tr>
-                            <td>Estado civil:</td>
-                            <td>
-                                <select name="estado_civil">
-                                    <option hidden disabled selected value></option>
-                                    <option value="soltero">Soltero</option>
-                                    <option value="casado">Casado</option>
-                                    <option value="viudo">Viudo</option>
-                                    <option value="divorciado">Divorciado</option>            
-                                </select>
-                            </td>
-                        </tr>
-        
-
-                        <tr>
-                            <td rowspan="3">Tipo de mensaje:</td>
-                            <td>
+                    <div>
+                        <label for="dni">DNI:</label>
+                        <input type="number" name="dni" id="dni">
+                    </div>
+                    <div>
+                        <label for="email">Correo:</label>
+                        <input type="email" name="correo" id="email">
+                    </div>
+                    <div>
+                        <label for="cell">Celular:</label>
+                        <input type="number" name="celular" id="cell">
+                    </div>
+                    <div>
+                        <label for="state">Estado civil:</label>
+                        <select name="estado_civil" id="state">
+                            <option hidden disabled selected value></option>
+                            <option value="soltero">Soltero</option>
+                            <option value="casado">Casado</option>
+                            <option value="viudo">Viudo</option>
+                            <option value="divorciado">Divorciado</option>            
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tm">Tipo de mensaje:</label>
+                        <div class="combo-radio">
+                            <span>
                                 <input type="radio" id="consulta" name="tipo_mensaje">
                                 <label for="consulta">Consulta</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
+                            </span>
+                            <span>
                                 <input type="radio" id="solicitud" name="tipo_mensaje">
                                 <label for="solicitud">Solicitud</label>
-        
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
+                            </span>
+                            <span>
                                 <input type="radio" id="reclamo" name="tipo_mensaje">
                                 <label for="efectivo">Reclamo</label>
-                            </td>
-                        </tr>
+                            </span>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>Asunto:</td>
-                            <td><input type="text" size="21px" name="asunto"></td>
-                        </tr>
-        
-                        <tr>
-                            <td style="vertical-align: top;">
-                                Mensaje:
-                            </td>
-                            <td>
-                                <textarea style="resize:vertical" name="mensaje" cols="30" rows="10"></textarea>
-                            </td>
-                        </tr>
-        
-                    </table>
+                    <div>
+                        <label for="subject">Asunto:</label>
+                        <input type="text" name="asunto" id="subject">
+                    </div>
+                    
+                    <div>
+                        <label for="message">Mensaje:</label>
+                        <textarea style="resize:vertical" id="message"ame="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+
                     <div class="button-container"">
                         <input type="reset" name="limpiar" value="LIMPIAR">
                         <input type="submit" name="enviar" value="ENVIAR">

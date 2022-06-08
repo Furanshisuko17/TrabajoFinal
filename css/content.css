@@ -19,16 +19,15 @@ iframe {
 }
 
 .content{
-    margin-top:65px;
-    display: flex;
+    position: absolute;
+    overflow-y: auto;
+    width: 100%;
+    top: 65px;
+    bottom: 0px;
     justify-content: center;
-    padding-top: 1px;
+    
 }
 
-.content table {
-    align-self:center;
-    width:100%;
-}
 
 .content img {
     max-width:100%;
@@ -37,34 +36,62 @@ iframe {
 }
 
 .contact {
-    margin: 0 auto; 
+    margin: 10px auto; 
+    margin-bottom: 0px;
     padding:10; 
     width:35%;
     font-size:110%
 }
+.contact label {
+    display:inline-block;
+    width: 150px;
+}
+
+.contact input {
+    width: 200px;
+}
+
+.contact input[type="radio"] {
+    width: fit-content;
+}
+
+.contact select {
+    width: 200px;
+}
+
 
 .contact fieldset {
     padding:10px 40px
 }
 
-.contact tr {
-    height: 30px;
+
+.contact div {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 10px;
 }
-.contact td {
-    vertical-align:baseline;
+
+.contact .combo-radio {
+    padding: 0px;
+    height: 70px;
+    flex-direction:column;
+    justify-content:space-between
 }
 
 .contact .button-container {
     padding: 10px;
-    display: flex;
     justify-content: center;
     gap: 20px;
 
 }
 
+.button-container input {
+    width: 80px;
+    height: 22px;
+}
+
 
 .productbar{
-    margin-top: 65px;
     box-sizing: border-box;
     padding:0px 15px;
     position: relative;
@@ -84,6 +111,7 @@ iframe {
     float:right;
     padding:12px 15px;
     letter-spacing: 0.5px;
+    padding-bottom: 0px;
 }
 
 

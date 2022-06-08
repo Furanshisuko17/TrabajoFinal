@@ -7,5 +7,6 @@ Proyecto final:
         ☐ Completar el inicio
         ☐ añadir más entradas de productos
     contactanos.html: 
-        ☐ Rehacer el form con flex en vez de tablas
+        ✔ Rehacer el form con flex en vez de tablas @done(22/06/07 18:43)
+        ☐ Usar PHP
         
