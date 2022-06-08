@@ -61,25 +61,25 @@
                         <label for="state">Estado civil:</label>
                         <select name="estado_civil" id="state">
                             <option hidden disabled selected value></option>
-                            <option value="soltero">Soltero</option>
-                            <option value="casado">Casado</option>
-                            <option value="viudo">Viudo</option>
-                            <option value="divorciado">Divorciado</option>            
+                            <option value="Soltero">Soltero</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Viudo">Viudo</option>
+                            <option value="Divorciado">Divorciado</option>            
                         </select>
                     </div>
                     <div>
                         <label for="tm">Tipo de mensaje:</label>
                         <div class="combo-radio">
                             <span>
-                                <input type="radio" id="consulta" name="tipo_mensaje">
+                                <input type="radio" id="consulta" name="tipo_mensaje" value="Consulta">
                                 <label for="consulta">Consulta</label>
                             </span>
                             <span>
-                                <input type="radio" id="solicitud" name="tipo_mensaje">
+                                <input type="radio" id="solicitud" name="tipo_mensaje" value="Solicitud">
                                 <label for="solicitud">Solicitud</label>
                             </span>
                             <span>
-                                <input type="radio" id="reclamo" name="tipo_mensaje">
+                                <input type="radio" id="reclamo" name="tipo_mensaje" value="Reclamo">
                                 <label for="efectivo">Reclamo</label>
                             </span>
                         </div>
@@ -92,7 +92,7 @@
                     
                     <div>
                         <label for="message">Mensaje:</label>
-                        <textarea style="resize:vertical" id="message"ame="mensaje" cols="30" rows="10"></textarea>
+                        <textarea style="resize:vertical" id="message" name="mensaje" cols="30" rows="10"></textarea>
                     </div>
 
                     <div class="button-container"">
