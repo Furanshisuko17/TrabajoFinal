@@ -128,11 +128,14 @@ footer {
     bottom: 0;
     display: flex;
     background-color: #303030;
+    justify-content:space-around;
+    align-items: center;
 }
 
 
 footer p {
    color: white; 
+
 }
 
 
