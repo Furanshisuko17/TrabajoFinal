@@ -21,18 +21,19 @@
             <div class="contact">
                 <fieldset>
                     <?php
-                        $value = $_POST['tipo_mensaje'];
+                        function getFormType() {
+                            $value = $_POST['tipo_mensaje'];
 
-                        if ($value == 'Consulta'){
-                            $legend_content = 'Consulta enviada!';
-                        }elseif ($value == 'Solicitud') {
-                            $legend_content = 'Solicitud enviada!';
-                        }elseif ($value == 'Reclamo'){
-                            $legend_content = 'Reclamo enviado!';
+                            if ($value == 'Consulta'){
+                                return 'Consulta enviada!';
+                            }elseif ($value == 'Solicitud') {
+                                return 'Solicitud enviada!';
+                            }elseif ($value == 'Reclamo'){
+                                return 'Reclamo enviado!';
+                            }
                         }
-
                     ?>
-                    <legend><?php echo $legend_content; ?></legend>
+                    <legend><?php echo getFormType(); ?></legend>
 
                     <div>
                         <label>Nombres:</label>
