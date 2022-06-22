@@ -35,11 +35,9 @@
         
             </div>
             <iframe seamless name="main-content" height="100%" width="100%" src="../productos/main.html" ></iframe>
+            <?php
+                include('view/footer.php');
+            ?>
         </div> 
-
-        <?php
-            include('view/footer.php');
-        ?>
-
     </body>
 </html>

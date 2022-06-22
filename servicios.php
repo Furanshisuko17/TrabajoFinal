@@ -20,12 +20,10 @@
         ?>
 
         <div class="content">
-
+            <?php
+                include('view/footer.php');
+            ?>
         </div>
-        
-        <?php
-            include('view/footer.php');
-        ?>
     </body>
 
 </html>

@@ -53,11 +53,13 @@
                     </td>
                 </tr>
             </table>
+
+            <?php
+                include('view/footer.php');
+            ?>
+        
         </div>
 
-        <?php
-            include('view/footer.php');
-        ?>
         
     </body>
 </html>

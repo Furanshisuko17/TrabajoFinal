@@ -89,11 +89,13 @@
                     </div>
                 </fieldset>
             </form>
+
+            <?php
+            include('view/footer.php');
+            ?>
         </div>
 
-        <?php
-            include('view/footer.php');
-        ?>
+       
         
     </body>
 </html>
