@@ -13,23 +13,10 @@
 
     <body>
         
-        <div class="navbar" >
-
-            <a class="none" style="float:left;padding:0px" href="index.html" title="Computadoras">
-                <img src="/img/computadora.png" alt="Logo de la empresa">
-            </a>
-            
-            <a class="name" href="index.html" title="Computadoras">
-                <b>Computadoras</b>
-            </a>
-
-            <a style="background-color:rgb(48, 48, 48);" href="../contactanos.html" title="Cont&aacute;ctanos">Cont&aacute;ctanos</a>
-            <a href="../productos.html" title="Productos que ofrecemos">Productos</a> 
-            <a href="../servicios.html" title="Nuestros servicios">Servicios</a>
-            <a href="../nosotros.html" title="Acerca de nosotros">Nosotros</a>
-            <a href="../index.html" title="Inicio">Inicio</a>
-
-        </div>
+        <?php 
+            $include_option = 'contactanos';
+            include('../view/header.php');
+        ?>
         <div class="content" >
             <div class="contact">
                 <fieldset>
@@ -85,6 +72,9 @@
                     </div>
                 </fieldset>
             </div>  
+            <?php
+                include('../view/footer.php');
+            ?>
         </div>
     </body>
 </html>
