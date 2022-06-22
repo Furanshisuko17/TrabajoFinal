@@ -38,14 +38,4 @@
         </div> 
 
     </body>
-
-    <!--<frameset rows="65px, 40px ,*" frameborder="0">
-        
-        <frame name="navbar" src="productos/navbar.html" scrolling="no" noresize="noresize" marginheight="0" marginwidth="0">
-        <frame name="productbar" src="productos/productbar.html" scrolling="no" noresize="noresize" marginheight="0" marginwidth="0">
-        <frame name="main" src="productos/main.html" noresize="noresize" marginheight="0" marginwidth="0">
-
-    </frameset> -->
-
-
 </html>
