@@ -5,8 +5,17 @@ Proyecto final:
     productos.html:
         ✔ Rehacer la pagina entera con javascript en vez de frame/frameset @done(22/05/25 10:25)
         ☐ Completar el inicio
-        ☐ añadir más entradas de productos
+        ☐ añadir más entradas de productos...
+        Rehacer la pagina en php:
+            ☐ 1. Añadir todos los productos a la base de datos.
+            ☐ 2. Obtener las imagenes 
+            ☐ 3. Usar la php(y talvez js) para hacer la pagina interactiva
+            ☐ 4. Crear una pagina para ver el producto.
+            ☐ ?. Crear un carrito de compras(?)
     contactanos.html: 
         ✔ Rehacer el form con flex en vez de tablas @done(22/06/07 18:43)
         ✔ Usar PHP @done(22/06/08 17:40)
+    servicios.php: 
+        ✔ Añadir contenido
+        ☐ Añadir más contenido
         
