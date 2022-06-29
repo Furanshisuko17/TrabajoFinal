@@ -168,8 +168,9 @@ iframe {
     text-decoration: none;
     float:right;
     padding:12px 15px;
+    padding-bottom: 8.45px;
     letter-spacing: 0.5px;
-    padding-bottom: 0px;
+    
 }
 
 /* Footer section */

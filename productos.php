@@ -25,7 +25,7 @@
 
             <div class="productbar">
 
-                <a onclick="changeUrl('../productos/main.html')" id="main" style="padding-top:11px;float:left;font-size:120%" href="javascript:void(0);">Inicio</a>
+                <a onclick="changeUrl('../productos/main.html')" id="main" style="padding-top:11px;float:left;font-size:120%;padding-bottom:6.5px;" href="javascript:void(0);">Inicio</a>
         
                 <a onclick="changeUrl('../productos/links/case.html')" id="case" href="javascript:void(0);">Cajas</a>
                 <a onclick="changeUrl('../productos/links/psu.html')" id="psu" href="javascript:void(0);">Fuentes de poder</a>

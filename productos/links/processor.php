@@ -8,12 +8,16 @@
 
 </head>
 <body>
-    <div class="content">
-        <div class="sidebar">
-            <p>Sidebar content</p>
-        </div>
+    <?php 
+        include '../../php/connection.php';
+        $con = connection();
 
+        $sql = "SELECT * FROM `procesadores` ";
+        $query = mysqli_query($con, $sql);
+    ?>
+    <div class="content">
         
+        <div class="sidebar"><p>Sidebar content</p></div>
         <div class="table main">
             <table aria-label="table processor content">
                 <colgroup>
@@ -35,41 +39,56 @@
                     </tr>
                 </thead>
                 <tbody>
+            <?php 
+                while($row = mysqli_fetch_array($query)){
+              
+            ?>    
                     <tr>
                         <td>
                             <div class="table-content">
                                 <div class="image-wrapper">
-                                    <img alt="Procesador Ryzen 5 5600X" src="img/processors/amd5600.jpg">
+                                    <img alt="<?php echo "Procesador ".$row[1]." ".$row[2]." ".$row[3]." ".$row[4];?>" src="img/processors/amd5600.jpg">
                                 </div>
-                                <div class="text name">AMD Ryzen 5 5600X</div>
+                                <div class="text name"><?php echo $row[1]." ".$row[2]." ".$row[3]." ".$row[4];?></div>
                             </div>
                         </td>
                         <td>
                             <div class="table-content">
-                                <div class="text ">6</div>
+                                <div class="text "><?php echo $row[5];?></div>
                             </div>
                         </td>
                         <td>
                             <div class="table-content">
-                                <div class="text">3.7 Ghz</div>
+                                <div class="text"><?php echo $row[6]." Ghz";?></div>
                             </div>
                         </td>
                         <td>
                             <div class="table-content">
-                                <div class="text">65 W</div>
+                                <div class="text"><?php echo $row[7]." W";?></div>
                             </div>
                         </td>
                         <td>
                             <div class="table-content">
-                                <div class="text">No tiene</div>
+                                <div class="text">
+                                <?php
+                                    if(!$row[8]){
+                                        echo "No tiene";
+                                    }else {
+                                        echo $row[9];
+                                    }
+                                ?>
+                                </div>
                             </div>
                         </td>
                         <td>
                             <div class="table-content">
-                                <div class="text">S/.796.95</div>
+                                <div class="text"><?php echo "S/. ".$row[10];?></div>
                             </div>
                         </td>
                     </tr>
+            <?php
+                } 
+            ?>  
                 </tbody>
             </table>
         </div>

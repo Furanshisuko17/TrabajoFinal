@@ -1,5 +1,5 @@
 <?php
-    function connection(){
+    function connection(){  
         $host = "localhost";
         $user = "root";
         $password = "fran1234";
