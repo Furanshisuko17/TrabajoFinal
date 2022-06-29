@@ -68,7 +68,7 @@
                             </span>
                             <span>
                                 <input type="radio" id="reclamo" name="tipo_mensaje" value="Reclamo">
-                                <label class="no-bold" for="efectivo">Reclamo</label>
+                                <label class="no-bold" for="reclamo">Reclamo</label>
                             </span>
                         </div>
                     </div>
