@@ -40,9 +40,7 @@
                 </thead>
                 <tbody>
             <?php 
-                while($row = mysqli_fetch_array($query)){
-              
-            ?>    
+                while($row = mysqli_fetch_array($query)){?>    
                     <tr>
                         <td>
                             <div class="table-content">
@@ -87,8 +85,7 @@
                         </td>
                     </tr>
             <?php
-                } 
-            ?>  
+                }?>  
                 </tbody>
             </table>
         </div>
