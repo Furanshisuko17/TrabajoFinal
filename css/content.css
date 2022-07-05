@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -19,13 +22,25 @@
     background: transparent;
 }
 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* body */
 body {
     margin:0px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color:rgb(230, 230, 230);
     text-decoration: none;
     display:flex;
-
+                                     
 }
 
 iframe {
@@ -78,12 +93,10 @@ iframe {
 }
 
 #item h2 {
-
     text-align: center;
 }
 
 #item p {
-
     width: fit-content;
     text-align: center;
 }
@@ -95,18 +108,23 @@ iframe {
     width:35%;
     font-size:110%
 }
+
+.contact legend {
+    font-weight: 600;
+}
+
 .contact label {
-    font-weight: 700;
+    font-weight: 600;
     display:inline-block;
     width: 150px;
 }
 
 .contact .no-bold {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .contact input {
-    width: 200px;
+    width: 214px;
 }
 
 .contact input[type="radio"] {
@@ -114,7 +132,7 @@ iframe {
 }
 
 .contact select {
-    width: 200px;
+    width: 214px;
 }
 
 
@@ -164,7 +182,7 @@ iframe {
 
 .productbar a {
     color:white;
-    font-weight:bold;
+    font-weight: 500;
     text-decoration: none;
     float:right;
     padding:12px 15px;
@@ -172,6 +190,7 @@ iframe {
     letter-spacing: 0.5px;
     
 }
+/* body */
 
 /* Footer section */
 footer {
@@ -189,16 +208,6 @@ footer {
 footer p {
    color: white; 
     
-}
-
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-input[type=number] {
-    -moz-appearance: textfield;
 }
 
 
