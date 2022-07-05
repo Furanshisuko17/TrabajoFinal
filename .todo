@@ -8,7 +8,7 @@ Proyecto final:
         ☐ añadir más entradas de productos...
         Rehacer la pagina en php:
             ☐ 1. Añadir todos los productos a la base de datos.
-            ☐ 2. Obtener las imagenes 
+            ✔ 2. Obtener las imagenes @started(22/07/05 00:41) @done(22/07/05 00:41) @lasted(25s)
             ☐ 3. Usar la php(y talvez js) para hacer la pagina interactiva
             ☐ 4. Crear una pagina para ver el producto.
             ☐ ?. Crear un carrito de compras(?)
