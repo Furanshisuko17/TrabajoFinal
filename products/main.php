@@ -3,10 +3,6 @@
         # TODO
 ?>        
 <div class="product-content">
-      
-
-
-
 
 
 </div>
@@ -21,5 +17,7 @@
         include 'psu.php';
     } else if ($page == 5) {
         include 'case.php';
-    } 
+    } else {
+        include 'util/404.php';
+    }
 ?>

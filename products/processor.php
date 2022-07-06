@@ -14,8 +14,8 @@
     <div class="table main">
         <table aria-label="table processor content">
             <colgroup>
-                <col width="30%">
-                <col width="14%">
+                <col width="35%">
+                <col width="11%">
                 <col width="14%">
                 <col width="12%">
                 <col width="14%">
