@@ -25,21 +25,21 @@
 
                     <div>
                         <label for="name">Nombres:</label>
-                        <input type="text" name="nombres" id="name">
+                        <input type="text" name="nombres" id="name" required>
                     </div>
 
                     <div>
                         <label for="lastname">Apellidos:</label>
-                        <input type="text" name="apellidos" id="lastname">
+                        <input type="text" name="apellidos" id="lastname" required>
                     </div>
 
                     <div>
                         <label for="dni">DNI:</label>
-                        <input type="number" name="dni" id="dni">
+                        <input type="number" name="dni" id="dni" required>
                     </div>
                     <div>
                         <label for="email">Correo:</label>
-                        <input type="email" name="correo" id="email">
+                        <input type="email" name="correo" id="email" required>
                     </div>
                     <div>
                         <label for="cell">Celular:</label>
@@ -47,8 +47,8 @@
                     </div>
                     <div>
                         <label for="state">Estado civil:</label>
-                        <select name="estado_civil" id="state">
-                            <option hidden disabled selected value></option>
+                        <select name="estado_civil" id="state" required>
+                            <option hidden disabled selected value=""></option>
                             <option value="Soltero">Soltero</option>
                             <option value="Casado">Casado</option>
                             <option value="Viudo">Viudo</option>
@@ -59,7 +59,7 @@
                         <label for="tm">Tipo de mensaje:</label>
                         <div class="combo-radio">
                             <span>
-                                <input type="radio" id="consulta" name="tipo_mensaje" value="Consulta">
+                                <input type="radio" id="consulta" name="tipo_mensaje" value="Consulta" required >
                                 <label class="no-bold" for="consulta">Consulta</label>
                             </span>
                             <span>
@@ -75,12 +75,12 @@
 
                     <div>
                         <label for="subject">Asunto:</label>
-                        <input type="text" name="asunto" id="subject">
+                        <input type="text" name="asunto" id="subject" required >
                     </div>
                     
                     <div>
                         <label for="message">Mensaje:</label>
-                        <textarea style="resize:vertical" id="message" name="mensaje" cols="30" rows="10"></textarea>
+                        <textarea style="resize:vertical" id="message" name="mensaje" cols="30" rows="10" required ></textarea>
                     </div>
 
                     <div class="button-container">

@@ -23,29 +23,38 @@
         
         <div class="content" >
 
-            <div class="productbar">
+            <div class="product-bar">
 
-                <a class="inicio" id="main" href="">Inicio</a>
+                <a class="inicio" id="main" href="/productos">Inicio</a>
         
-                <a id="processors" href="">Procesadores</a>
-                <a id="motherboard" href="">Tarjetas madre</a>
-                <a id="graphiccard" href="">Tarjetas gr&aacute;ficas</a>
-                <a id="psu" href="">Fuentes de poder</a>
-                <a id="case" href="">Cajas</a>
+                <a id="processors" href="/productos?page=1">Procesadores</a>
+                <a id="motherboard" href="/productos?page=2">Tarjetas madre</a>
+                <a id="graphiccard" href="/productos?page=3">Tarjetas gr&aacute;ficas</a>
+                <a id="psu" href="/productos?page=4">Fuentes de poder</a>
+                <a id="case" href="/productos?page=5">Cajas</a>
         
             </div>
-            <iframe seamless name="main-content" height="100%" width="100%" src="../products/main.html" ></iframe>
+            
             <?php
+                if(isset($_GET['page'])){
+                    $page = $_GET['page'];
+                } else {
+                    $page = 0;
+                }
+                
+                include('products/main.php');  
                 include('view/footer.php');
             ?>
+
         </div> 
     </body>
-</html>
+    </html>
+    
+    <!-- <iframe seamless name="main-content" height="100%" width="100%" src="../products/main.html" ></iframe> -->
+    
+    <!-- <div class="content" >
 
-
-<!-- <div class="content" >
-
-    <div class="productbar">
+    <div class="product-bar">
 
         <a onclick="changeUrl('../productos/main.html')" id="main" style="padding-top:11px;float:left;font-size:120%" href="">Inicio</a>
 

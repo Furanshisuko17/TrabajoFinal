@@ -1,5 +1,7 @@
 Proyecto final: 
     ✔ Reordenar todo el css @started(22/05/25 02:20) @done(22/05/25 04:21) @lasted(2h1m59s)
+    ☐ Usar media-queries para adaptar la pantalla a pantallas pequeñas
+    
     index.html: 
         ☐ Añadir contenido
     productos.html:
@@ -9,7 +11,7 @@ Proyecto final:
         Rehacer la pagina en php:
             ☐ 1. Añadir todos los productos a la base de datos.
             ✔ 2. Obtener las imagenes @started(22/07/05 00:41) @done(22/07/05 00:41) @lasted(25s)
-            ☐ 3. Usar la php(y talvez js) para hacer la pagina interactiva
+            ✔ 3. Usar la php(y talvez js) para hacer la pagina interactiva @done(22/07/05 23:07)
             ☐ 4. Crear una pagina para ver el producto.
             ☐ ?. Crear un carrito de compras(?)
     contactanos.html: 
@@ -21,5 +23,5 @@ Proyecto final:
     
 
     header.php:
-        ☐ Actualizarlo a float
+        ✔ Actualizarlo a float @done(22/07/05 23:08)
         
