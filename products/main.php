@@ -18,6 +18,8 @@
     } else if ($page == 5) {
         include 'case.php';
     } else {
-        include 'util/404.php';
+        header('Location: error/404.php');
+        $_GET['e'] = 404; 
+        exit(); 
     }
 ?>
