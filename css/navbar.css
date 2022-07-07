@@ -1,41 +1,47 @@
 .navbar{
-    box-sizing: content-box;
-    overflow:hidden;
-    background-color: red;
+    display:flex;
+    align-items: center;
+    max-height: 65px;;
+    background-color: var(--primary-color);
     padding: 0px 20px;
+    width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 400;
-    width: calc(100% - 20px) !important;
-
-}
-
-.selected-page {
-    background-color:rgb(48, 48, 48);
-}
-
-.navbar a{
-    float: right;
-    display: block;
-    text-align: center;
-    padding:21px 16px;
-    font-size: 20px;
-    text-decoration: none;
-    color:white;
 }
 
 .navbar .name{
-    float:left;
+    display:flex;
+    align-items: center;
+    gap: 15px;
     color:white;
-    text-align: center;
-    padding:8px 16px;
-    margin:0px;
-    font-size: 2.5em;
+    font-size: 38px;
+    font-weight: 700;
+    padding-left: 0px;
+    margin-right: auto;
+}
+
+.navbar .nav-transition{
+    transition: background-color 200ms ease-out 0ms
+}
+
+.navbar .nav-transition:hover {
+    background-color: var(--hover-color);
+}
+
+.selected-page {
+    background-color:var(--secondary-color);
+}
+
+.navbar a{
+    max-height: 65px;
+    padding: 21px 16px;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color:white;   
 }
 
 .navbar img{
-    float:left;
-    max-width: auto;
-    max-height: 3em;
+    padding: 2px;
+    max-height: 65px;
 }

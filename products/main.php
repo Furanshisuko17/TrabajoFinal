@@ -1,0 +1,23 @@
+<?php   
+    if ($page == 0) {
+        # TODO
+?>        
+<div class="product-content">
+
+
+</div>
+<?php
+    } else if($page == 1) {
+        include 'processor.php';
+    } else if ($page == 2) {
+        include 'motherboard.php';
+    } else if ($page == 3) {
+        include 'graphiccard.php';
+    } else if ($page == 4) {
+        include 'psu.php';
+    } else if ($page == 5) {
+        include 'case.php';
+    } else {
+        include 'util/404.php';
+    }
+?>

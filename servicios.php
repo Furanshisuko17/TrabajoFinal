@@ -5,10 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Servicios</title>
-
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/content.css">
-        
         </style>
     </head>
 
@@ -33,8 +31,6 @@
                     <p>Comprar en Computadoras te ofrece el servicio de entrega a domicilio, as&iacute; como tambi&eacute;n poder recogerlo en nuestro local m&aacute;s cercana.</p>
                 </div>
             </div>
-
-
             <?php
                 include('view/footer.php');
             ?>
