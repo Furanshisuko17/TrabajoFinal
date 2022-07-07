@@ -20,7 +20,8 @@ Proyecto final:
     servicios.php: 
         ✔ Añadir contenido
         ☐ Añadir más contenido
-    
+    nosotros.php:
+        ☐ Rehacer página usando flex o grid y añadir más contenido.
 
     header.php:
         ✔ Actualizarlo a float @done(22/07/05 23:08)

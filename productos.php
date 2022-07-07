@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/content.css">
-    <script type='text/javascript' src="js/product_script.js"></script>
+    <script deferred type='text/javascript' src="js/product_script.js"></script>
 </head>
 <body>
     <?php 
