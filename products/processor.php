@@ -10,7 +10,9 @@
 
 <div class="product-content">
     
-    <div class="sidebar"><p>Sidebar content</p></div>
+    <div class="sidebar">
+        <?php include 'cart.php'?>
+    </div>
     <div class="table main">
         <table aria-label="table processor content">
             <colgroup>

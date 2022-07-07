@@ -13,7 +13,9 @@ Proyecto final:
             ✔ 2. Obtener las imagenes @started(22/07/05 00:41) @done(22/07/05 00:41) @lasted(25s)
             ✔ 3. Usar la php(y talvez js) para hacer la pagina interactiva @done(22/07/05 23:07)
             ☐ 4. Crear una pagina para ver el producto.
-            ☐ ?. Crear un carrito de compras(?)
+            5. Crear un carrito de compras(?):
+                Carrito de compras interactivo(js):
+                    ☐ Al pasar el mouse encima tiene que verse una previsualizacion
     contactanos.html: 
         ✔ Rehacer el form con flex en vez de tablas @done(22/06/07 18:43)
         ✔ Usar PHP @done(22/06/08 17:40)

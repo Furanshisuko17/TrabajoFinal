@@ -26,14 +26,11 @@
         </div>
         
         <?php
-            
-
             if(isset($_GET['page'])){
                 $page = $_GET['page'];
             } else {
                 $page = 0;
             }
-            
             include('products/main.php');  
             include('view/footer.php');
         ?>

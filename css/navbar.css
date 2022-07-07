@@ -20,12 +20,27 @@
     margin-right: auto;
 }
 
+.navbar .cart-link {
+    display:flex;
+    align-items: center;
+    
+}
+
+.navbar .svg-image {
+    fill: white;
+    
+}
+
 .navbar .nav-transition{
     transition: background-color 200ms ease-out 0ms
 }
 
 .navbar .nav-transition:hover {
-    background-color: var(--hover-color);
+    background-color: var(--primary-hover-color);
+}
+
+.navbar .nav-transition:active {
+    background-color: var(--secondary-hover-color);
 }
 
 .selected-page {
