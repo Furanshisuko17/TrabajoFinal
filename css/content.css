@@ -213,7 +213,7 @@ iframe {
 .product-content {
     box-sizing: border-box;
     display:flex;
-    margin:10px 50px;
+    margin:10px 30px;
     align-items: flex-start;
 }
 
@@ -317,7 +317,7 @@ iframe {
 }
 
 .product-content .table table .name{
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .product-content .table table .text {
@@ -353,6 +353,10 @@ iframe {
     margin: 5px;
     border: 1px solid rgb(102, 102, 102);
     background-color:white;
+    min-width: 52px;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
 }
 
 .product-content .table img{
