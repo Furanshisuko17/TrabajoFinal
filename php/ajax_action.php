@@ -169,7 +169,7 @@ if(isset($_SESSION['cart'])){
     </div>  
     <?php
         $total_price = $total_price + (float) $quantity * (float) $product_data[3];
-        //$_SESSION['total_price'] = $total_price;
+        $_SESSION['total_price'] = $total_price;
         }
 
     ?>
