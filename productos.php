@@ -21,8 +21,8 @@
             <a id="processors" href="/productos?page=1">Procesadores</a>
             <a id="motherboard" href="/productos?page=2">Tarjetas madre</a>
             <a id="graphiccard" href="/productos?page=3">Tarjetas gr&aacute;ficas</a>
-            <a id="psu" href="/productos?page=4">Fuentes de poder</a>
-            <a id="case" href="/productos?page=5">Cajas</a>
+            <a id="ram" href="/productos?page=4">Memorias RAM</a>
+            <a id="psu" href="/productos?page=5">Fuentes de poder</a>
         </div>
         
         <?php

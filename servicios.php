@@ -11,16 +11,12 @@
         <link rel="stylesheet" href="css/content.css">
         </style>
     </head>
-
     <body>
-
         <?php 
             $include_option = 'servicios';
             include('view/header.php');
         ?>
-
         <div class="content">
-
             <div id="services">
                 <div id="item">
                     <h2>Atenci&oacute;n al cliente</h2>

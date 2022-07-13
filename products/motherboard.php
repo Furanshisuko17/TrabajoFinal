@@ -8,10 +8,11 @@
     
 ?>
 
+<div class="title"> 
+    <h1>Tarjetas madre</h1>
+    <p>Encuentre tarjetas madre al mejor precio.</p>
+</div>
 <div class="product-content"> 
-    <div class="sidebar">
-        <?php include 'cart.php'?>
-    </div>
     <div class="table main">
         <table aria-label="table motherboard content">
             <colgroup>
@@ -39,9 +40,12 @@
                     <td>
                         <div class="table-content">
                             <div class="image-wrapper">
+                                <div class="hidden">
+                                    <img alt="<?php echo "Tarjeta madre ".$row[1];?>" src="<?php echo "products/img/motherboards/".$row[8]?>">
+                                </div>
                                 <img alt="<?php echo "Tarjeta madre ".$row[1];?>" src="<?php echo "products/img/motherboards/".$row[8]?>">
                             </div>
-                            <div class="text name"><?php echo $row[1];?></div>
+                            <div class="text semi-bold-text"><?php echo $row[1];?></div>
                         </div>
                     </td>
                     <td>
@@ -68,7 +72,7 @@
                     </td>
                     <td>
                         <div class="table-content">
-                            <div class="text"><?php echo "S/. ".$row[6];?></div>
+                            <div class="text semi-bold-text"><?php echo "S/. ".$row[6];?></div>
                         </div>
                     </td>
                 </tr>
@@ -77,4 +81,7 @@
             </tbody>
         </table>
     </div>    
+    <div class="sidebar">
+        <?php include 'cart.php'?>
+    </div>
 </div>

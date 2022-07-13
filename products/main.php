@@ -5,6 +5,10 @@
 <div class="product-content">
 
 
+
+
+
+
 </div>
 <?php
     } else if($page == 1) {
@@ -14,9 +18,9 @@
     } else if ($page == 3) {
         include 'graphiccard.php';
     } else if ($page == 4) {
-        include 'psu.php';
+        include 'ram.php';
     } else if ($page == 5) {
-        include 'case.php';
+        include 'psu.php';
     } else {
         header('Location: error/404.php');
         $_GET['e'] = 404; 
