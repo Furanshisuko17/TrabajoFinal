@@ -258,7 +258,6 @@ iframe {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04),
     0 4px 8px rgba(0, 0, 0, 0.03), 0 8px 16px rgba(0, 0, 0, 0.03),
     0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02);
-    
 }
 
 .cart .header {
@@ -278,6 +277,66 @@ iframe {
     text-align: center;
     padding: 50px 10px;
     color:hsl(0, 0%, 28%)
+}
+
+.cart-content .item {
+    max-width: 325px;
+    padding: 5px;
+    border: 1px solid hsl(0, 0%, 38%);
+    margin: 8px;
+    border-radius: 5px;
+}
+
+.item .name {
+    display: flex;
+
+}
+
+.item .name .text-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.item .name .text-content button {
+    appearance: none;
+    background-color: transparent;
+    border-style: none;
+    max-width: 40px;
+    max-height: 40px;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item .name .text-content .add-remove {
+    
+}
+
+
+
+.item .name .text-content .svg-image {
+    transition: fill 150ms ease-out 0ms;
+    transform: scale(0.7);
+}
+
+.item .name .text-content .svg-image:hover {
+    fill:red
+}
+
+
+.item .name img {
+    max-width: 100px;
+    padding: 5px;
+    border: 1px solid hsl(0, 0%, 57%);
+    border-radius: 2px;
+}
+
+.item .name p {
+    font-size: 0.8em;
+    padding-left: 5px; 
 }
 
 .cart .footer {
@@ -401,6 +460,23 @@ iframe {
 
 .table-content button {
     appearance: none;
+    background-color: transparent;
+    border-style: none;
+    cursor:pointer;
+    transition: background-color 100ms ease-out 0ms;
+    display:flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.table-content button:hover {
+   
+    background-color:var(--secondary-hover-color);
+    fill: white;
+}
+
+.table-content .svg-img {
+    transform: scale(0.8);
 }
 
 .image-wrapper .hidden {
