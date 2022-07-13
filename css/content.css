@@ -312,10 +312,15 @@ iframe {
 }
 
 .item .name .text-content .add-remove {
-    
+    padding: 0px 10px;
+    font-size: 100%;
+    font-weight: 500;
+    color:#535353;
 }
 
-
+.item .name .text-content num {
+    font-size: 110%;
+}
 
 .item .name .text-content .svg-image {
     transition: fill 150ms ease-out 0ms;
@@ -337,6 +342,13 @@ iframe {
 .item .name p {
     font-size: 0.8em;
     padding-left: 5px; 
+}
+
+.cart .total-price {
+    padding: 15px 5px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 120%;
 }
 
 .cart .footer {

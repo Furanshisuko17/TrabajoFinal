@@ -17,7 +17,7 @@ session_start();
     <script type='text/javascript' src="js/jquery-3.6.0.min.js"></script>
     <script deferred type='text/javascript' src="js/product_script.js"></script>
 </head>
-<body>
+<body onload="cartAction('loadpage', '')">
     <?php 
         $include_option = 'productos';
         include('view/header.php');

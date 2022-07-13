@@ -17,6 +17,12 @@ function cartAction(action, product_code) {
                 case "empty":
                     queryString = 'action='+action;
                     break;
+                case "removeone":
+                    queryString = 'action='+action+'&code='+ product_code;;
+                    break;
+                case "loadpage":
+                    queryString = 'action='+action;
+                    break;
             }	 
         }
         jQuery.ajax({
