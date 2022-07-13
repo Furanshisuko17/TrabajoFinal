@@ -1,9 +1,4 @@
-<?php 
-session_start();
-
-?>
-
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,8 +19,8 @@ session_start();
     ?>
     <div class="content" >
         <div class="product-bar">
-            <a class="inicio" id="main" href="/productos">Inicio</a>
-            <a id="processors" href="/productos?page=1">Procesadores</a>
+            <!-- <a class="inicio" id="main" href="/productos">Inicio</a> -->
+            <a style="margin-left:auto;" id="processors" href="/productos?page=1">Procesadores</a>
             <a id="motherboard" href="/productos?page=2">Tarjetas madre</a>
             <a id="graphiccard" href="/productos?page=3">Tarjetas gr&aacute;ficas</a>
             <a id="ram" href="/productos?page=4">Memorias RAM</a>

@@ -17,6 +17,9 @@ function cartAction(action, product_code) {
                 case "empty":
                     queryString = 'action='+action;
                     break;
+                case "addone":
+                    queryString = 'action='+action+'&code='+ product_code;
+                    break;
                 case "removeone":
                     queryString = 'action='+action+'&code='+ product_code;;
                     break;
@@ -32,7 +35,13 @@ function cartAction(action, product_code) {
         success: function(data){
             $("#empty-message").hide();
             $("#cart").html(data);
+            if(action == "add"){
+                var scroll=document.getElementById("cart");
+                scroll.scrollTop = scroll.scrollHeight;
+            }
         },
         error: function (){}
         });	
+
+        
     }

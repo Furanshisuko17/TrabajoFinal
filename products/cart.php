@@ -8,7 +8,9 @@
     </div>
     
     <div class="footer">
-        <button class="button">Pagar</button>
+        <a href="../payment" title="Pagar">
+            <button class="button">Pagar</button>
+        </a>
         <button class="button empty-card" onclick="cartAction('empty', '')">Vaciar carrito</button>
     </div>
 </div>

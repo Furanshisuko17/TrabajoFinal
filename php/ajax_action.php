@@ -64,9 +64,14 @@ function getProduct($id) {
     return array($name, $extra_data, $img, $precio, $product);
 }
 
+function printEmptyCart(){
+    echo '<div class="empty-text" id="empty-message">El carrito est&aacute; vac&iacute;o</div>';
+}
+
 if(isset($_POST['action'])) {
     switch($_POST['action']) {
         case "add":
+        case "addone":
             $product_code = $_POST['code'];
             if(empty($_SESSION['cart'])){
                 $_SESSION['cart'] = array($_POST['code'] => 1);
@@ -117,11 +122,12 @@ if(isset($_POST['action'])) {
 
 if(isset($_SESSION['cart'])){
     if(sizeof($_SESSION['cart']) == "0"){
-        echo '<div class="empty-text" id="empty-message">El carrito est&aacute; vac&iacute;o</div>';
+        printEmptyCart();
     }else {
         $total_price = 0;
         foreach($_SESSION['cart'] as $product_id => $quantity){
             $product_data = getProduct($product_id);
+            
             //echo '<pre>'; print_r($product_data); echo '</pre>';
     ?>    
     <div class="item">
@@ -145,11 +151,11 @@ if(isset($_SESSION['cart'])){
                 ?> 
                 </p>
                 <div style="display:flex;justify-content:space-around;align-items:center">
-                    <div><?php echo "S/. ".$product_data[3] ?></div>
+                    <div style="font-size:90%"><?php echo "S/. ".$product_data[3] ?></div>
                     <div style="display:flex; justify-content:space-around;align-items:center;border-radius:15px;border:1px solid black">
                         <button class="add-remove" onclick="cartAction('removeone', '<?php echo $product_id;?>')" title="Quitar elemento">-</button>
-                        <num><?php echo $quantity ?></num>
-                        <button class="add-remove" onclick="cartAction('add', '<?php echo $product_id;?>')" title="Agregar elemento">+</button>
+                        <p class="num"><?php echo $quantity;?></p>
+                        <button class="add-remove" onclick="cartAction('addone', '<?php echo $product_id;?>')" title="Agregar elemento">+</button>
                     </div>
                     <button type="button" title="Eliminar" onclick="cartAction('remove', '<?php echo $product_id;?>')">
                         <svg class="svg-image" preserveAspectRatio="xMidYMin" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
@@ -163,7 +169,7 @@ if(isset($_SESSION['cart'])){
     </div>  
     <?php
         $total_price = $total_price + (float) $quantity * (float) $product_data[3];
-        
+        //$_SESSION['total_price'] = $total_price;
         }
 
     ?>
@@ -173,9 +179,9 @@ if(isset($_SESSION['cart'])){
     <?php
     }
 }else if(empty($_SESSION['cart'])) {
-    echo '<div class="empty-text" id="empty-message">El carrito est&aacute; vac&iacute;o</div>';
+    printEmptyCart();
 } else {
-    echo '<div class="empty-text" id="empty-message">El carrito est&aacute; vac&iacute;o</div>';
+    printEmptyCart();
 }
 ?>
 

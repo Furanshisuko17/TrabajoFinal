@@ -209,6 +209,11 @@ iframe {
 
 /* end product-bar */
 
+
+.content .payment {
+    padding: 40px 5px;
+}
+
 /* title */
 
 .content .title {
@@ -236,6 +241,11 @@ iframe {
     display:flex;
     margin:10px 20px;
     align-items: flex-start;
+}
+
+.product-content .main {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-content .sidebar {
@@ -271,6 +281,7 @@ iframe {
 .cart .cart-content {
     max-height: 400px;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .cart-content .empty-text {
@@ -318,8 +329,8 @@ iframe {
     color:#535353;
 }
 
-.item .name .text-content num {
-    font-size: 110%;
+.item .name .text-content .num {
+    font-size: 100%;
 }
 
 .item .name .text-content .svg-image {
