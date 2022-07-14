@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagar</title>
+    <title>Carrito</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/navbar.css">
@@ -16,7 +16,7 @@ session_start();
 </head>
 <body>
     <?php 
-        $include_option = 'payment';
+        $include_option = 'cart';
         include('view/header.php');
     ?>
     <div class="content" >

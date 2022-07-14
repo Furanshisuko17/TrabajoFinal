@@ -29,7 +29,7 @@ function getProduct($id) {
         while($row = mysqli_fetch_array($query)){
             $name = $row['nombre'];
             $extra_data = $row['chipset'];
-            $img = "graphiccars/".$row['img'];
+            $img = "graphiccards/".$row['img'];
             $precio = $row['precio'];
         }
     } else if($product == 'motherboard'){
@@ -114,11 +114,9 @@ if(isset($_POST['action'])) {
             }
             break;
         case "loadpage":
-                
             break;
     }   
 }
-
 
 if(isset($_SESSION['cart'])){
     if(sizeof($_SESSION['cart']) == "0"){
@@ -127,30 +125,33 @@ if(isset($_SESSION['cart'])){
         $total_price = 0;
         foreach($_SESSION['cart'] as $product_id => $quantity){
             $product_data = getProduct($product_id);
-            
             //echo '<pre>'; print_r($product_data); echo '</pre>';
     ?>    
     <div class="item">
         <div class="name">
-            <img alt="<?php echo $product_data[0]?>" src="<?php echo "/products/img/".$product_data[2];?>">
+            <div class="image">
+                <img alt="<?php echo $product_data[0]?>" src="<?php echo "/products/img/".$product_data[2];?>">
+                </div>
             <div class="text-content">
-                <p><?php echo $product_data[0]?></p> 
-                <p> 
-                <?php 
-                    if($product_data[4] == "processor") {
-                        echo "Velocidad: ".$product_data[1]." Ghz";
-                    } else if ($product_data[4] == "motherboard") {
-                        echo "Socket: ".$product_data[1];
-                    } else if ($product_data[4] == "graphiccard") {
-                        echo "Chipset: ".$product_data[1];
-                    } else if ($product_data[4] == "psu") {
-                        echo "Eficiencia: ".$product_data[1];
-                    } else if ($product_data[4] == "ram") {
-                        echo "Velocidad: ".$product_data[1]." Mhz";
-                    }
-                ?> 
-                </p>
-                <div style="display:flex;justify-content:space-around;align-items:center">
+                <div>
+                    <p><?php echo $product_data[0]?></p> 
+                    <p> 
+                    <?php 
+                        if($product_data[4] == "processor") {
+                            echo "Velocidad: ".$product_data[1]." Ghz";
+                        } else if ($product_data[4] == "motherboard") {
+                            echo "Socket: ".$product_data[1];
+                        } else if ($product_data[4] == "graphiccard") {
+                            echo "Chipset: ".$product_data[1];
+                        } else if ($product_data[4] == "psu") {
+                            echo "Eficiencia: ".$product_data[1];
+                        } else if ($product_data[4] == "ram") {
+                            echo "Velocidad: ".$product_data[1]." Mhz";
+                        }
+                    ?> 
+                    </p>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center">
                     <div style="font-size:90%"><?php echo "S/. ".$product_data[3] ?></div>
                     <div style="display:flex; justify-content:space-around;align-items:center;border-radius:15px;border:1px solid black">
                         <button class="add-remove" onclick="cartAction('removeone', '<?php echo $product_id;?>')" title="Quitar elemento">-</button>
@@ -174,7 +175,7 @@ if(isset($_SESSION['cart'])){
 
     ?>
     <div class="total-price" id="total-price">
-        <p><?php echo "Total: S/. ".$total_price ?></p>
+        <p><?php echo "Subtotal: S/. ".$total_price ?></p>
     </div>
     <?php
     }

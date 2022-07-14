@@ -300,7 +300,6 @@ iframe {
 
 .item .name {
     display: flex;
-
 }
 
 .item .name .text-content {
@@ -335,19 +334,24 @@ iframe {
 
 .item .name .text-content .svg-image {
     transition: fill 150ms ease-out 0ms;
-    transform: scale(0.7);
+    transform: scale(0.7) translateX(-20%);
+    overflow:visible;
 }
 
 .item .name .text-content .svg-image:hover {
     fill:red
 }
 
-
-.item .name img {
-    max-width: 100px;
+.item .name  .image {
+    max-width: 78px;
     padding: 5px;
     border: 1px solid hsl(0, 0%, 57%);
     border-radius: 2px;
+    display: flex;
+}
+
+.item .name  .image img {
+    border-radius: 0px;
 }
 
 .item .name p {
@@ -487,6 +491,7 @@ iframe {
     border-style: none;
     cursor:pointer;
     transition: background-color 100ms ease-out 0ms;
+    transition: fill 100ms ease-out 0ms;
     display:flex;
     align-items: center;
     border-radius: 5px;
