@@ -134,7 +134,7 @@ if(isset($_SESSION['cart'])){
                 </div>
             <div class="text-content">
                 <div>
-                    <p><?php echo $product_data[0]?></p> 
+                    <p style="font-weight:600"><?php echo $product_data[0]?></p> 
                     <p> 
                     <?php 
                         if($product_data[4] == "processor") {

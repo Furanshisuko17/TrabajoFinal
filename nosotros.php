@@ -13,12 +13,10 @@
     </head>
 
     <body>
-        
         <?php 
             $include_option = 'nosotros';
             include('view/header.php');
         ?>
-
         <div class="content" style="padding-top:15px">
             <table>       
                     <colgroup>
@@ -54,13 +52,9 @@
                     </td>
                 </tr>
             </table>
-
             <?php
                 include('view/footer.php');
             ?>
-        
         </div>
-
-        
     </body>
 </html>

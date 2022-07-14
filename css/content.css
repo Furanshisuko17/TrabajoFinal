@@ -547,6 +547,41 @@ iframe {
 
 /* end product page css */
 
+.content .cart-page {
+    /* border: 1px solid black; */
+    margin: 20px 10px;
+}
+
+.cart-page .empty-cart {
+    padding: 10px;
+}
+
+.empty-cart h1 {
+    padding: 20px;
+    font-size: 140%;
+    font-weight: 600;
+}
+
+.empty-cart p {
+    padding-top: 10px;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.cart-page .cart {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* end body */
 
 /* Footer section */
