@@ -12,5 +12,3 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [L]
 
 ErrorDocument 404 /error/404.php
-
-
