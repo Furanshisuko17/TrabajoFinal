@@ -1,4 +1,5 @@
 <?php 
+//Uso solo para propositos de desarrollo
 session_start();
 $_SESSION = array();
 if (ini_get("session.use_cookies")) {
