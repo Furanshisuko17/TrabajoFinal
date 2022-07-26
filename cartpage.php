@@ -22,28 +22,37 @@ function printEmptyCart(){
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/content.css">
     <script type='text/javascript' src="js/jquery-3.6.0.min.js"></script>
-    <script deferred type='text/javascript' src="js/product_script.js"></script>
+    <script type='text/javascript' src="js/product_script.js"></script>
 </head>
-<body>
+<body onload="loadCartSize()">
     <?php 
         $include_option = 'cart';
         include('view/header.php');
     ?>
     <div class="content" >
         <div class="cart-page">
-            <?php
-            if(isset($_SESSION['cart'])){
-                if(sizeof($_SESSION['cart']) == "0"){
-                    printEmptyCart();
+            <div class="cart-title">
+                Tu carrito de compras
+            </div>
+            <div class="cart-page-content">
+                <div class="cart-content">
+                <?php
+                if(isset($_SESSION['cart'])){
+                    if(sizeof($_SESSION['cart']) == "0"){
+                        printEmptyCart();
+                    }else {
+                        printCart();
+                        //echo '<pre>'; print_r($_SESSION['cart']); echo '</pre>';
+                    }
                 }else {
-                    printCart();
-                    //echo '<pre>'; print_r($_SESSION['cart']); echo '</pre>';
+                    printEmptyCart();
                 }
-            }else {
-                printEmptyCart();
-            }
-            ?>
+                ?>
+                </div>
+                <div class="payment-info">
 
+                </div>  
+            </div>
         </div>
         <?php
             include('view/footer.php');

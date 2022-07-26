@@ -2,7 +2,7 @@
     <div class="header">
         Carrito de compras
     </div>
-    <div class="cart-content" id="cart">
+    <div class="cart-content" id="items">
         <div class="empty-text" id="empty-message">El carrito est&aacute; vac&iacute;o</div>
 
     </div>
