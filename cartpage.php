@@ -1,6 +1,15 @@
 <?php 
 session_start();
 include ('php/util.php');
+
+function printEmptyCart(){
+?>
+<div class="empty-cart">
+    <h2>El carrito se encuentra vac&iacute;o.</h2>
+    <p>Actualmente no tienes ningun producto en tu carrito.</p>
+</div>
+<?php
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,18 +30,17 @@ include ('php/util.php');
         include('view/header.php');
     ?>
     <div class="content" >
-        <div class="payment">
+        <div class="cart-page">
             <?php
-            if(isset($_SESSION['cart_items_data'])){
-                echo "True:";
-                foreach($_SESSION['cart_items_data'] as $product_data){
-                    foreach($product_data as $data) {
-                        echo '<pre>'; print_r($product_data); echo '</pre>';
-                    }
+            if(isset($_SESSION['cart'])){
+                if(sizeof($_SESSION['cart']) == "0"){
+                    printEmptyCart();
+                }else {
+                    printCart();
+                    //echo '<pre>'; print_r($_SESSION['cart']); echo '</pre>';
                 }
-            } else {
-                echo "No existe datos";
-                
+            }else {
+                printEmptyCart();
             }
             ?>
 
@@ -41,5 +49,14 @@ include ('php/util.php');
             include('view/footer.php');
         ?>
     </div> 
+    
 </body>
 </html>
+
+<?php 
+function printCart() {?>
+
+
+<?php
+}
+?>
