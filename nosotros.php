@@ -9,16 +9,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/content.css">
-
+        <script type='text/javascript' src="js/jquery-3.6.0.min.js"></script>
+        <script type='text/javascript' src="js/product_script.js"></script>
     </head>
 
     <body>
-        
         <?php 
             $include_option = 'nosotros';
             include('view/header.php');
         ?>
-
         <div class="content" style="padding-top:15px">
             <table>       
                     <colgroup>
@@ -29,7 +28,7 @@
                 <tr style="height:auto">
                     <td align="center" >
                         <img style="max-width:60%;max-height:auto" src="img/computadoragrande.png" alt="Logo principal">
-                        <h1>Computadoras</h1>
+                        <h1>TechFran</h1>
                     </td>
 
                     <td  align="center" >
@@ -54,13 +53,9 @@
                     </td>
                 </tr>
             </table>
-
             <?php
                 include('view/footer.php');
             ?>
-        
         </div>
-
-        
     </body>
 </html>

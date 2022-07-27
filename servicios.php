@@ -9,7 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/content.css">
-        </style>
+        <script type='text/javascript' src="js/jquery-3.6.0.min.js"></script>
+        <script type='text/javascript' src="js/product_script.js"></script>
     </head>
     <body>
         <?php 

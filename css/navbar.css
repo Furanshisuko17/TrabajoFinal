@@ -21,14 +21,24 @@
 }
 
 .navbar .cart-link {
-    display:flex;
-    align-items: center;
+    display: block;
     
+}
+
+.cart-link .cart-items-number {
+    position: relative;
+    top: -66px;
+    left: 16px;
+    padding: 0px 5px;
+    z-index: 1000;
+    font-size: 82%;
+    text-align: center;
+    width: fit-content;
 }
 
 .navbar .svg-image {
     fill: white;
-    
+    transform: translateY(-25%);
 }
 
 .navbar .nav-transition{
