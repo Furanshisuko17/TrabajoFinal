@@ -13,7 +13,7 @@
         <script type='text/javascript' src="js/product_script.js"></script>
     </head>
 
-    <body onload="loadCartSize()">
+    <body>
         <?php 
             $include_option = 'nosotros';
             include('view/header.php');
@@ -28,7 +28,7 @@
                 <tr style="height:auto">
                     <td align="center" >
                         <img style="max-width:60%;max-height:auto" src="img/computadoragrande.png" alt="Logo principal">
-                        <h1>Computadoras</h1>
+                        <h1>TechFran</h1>
                     </td>
 
                     <td  align="center" >

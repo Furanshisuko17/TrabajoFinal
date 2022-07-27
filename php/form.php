@@ -13,7 +13,7 @@
         <script type='text/javascript' src="/js/product_script.js"></script>
     </head>
 
-    <body onload="loadCartSize()">
+    <body>
         
         <?php 
             $include_option = 'contactanos';

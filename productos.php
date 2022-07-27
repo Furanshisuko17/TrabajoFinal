@@ -12,7 +12,7 @@
     <script type='text/javascript' src="js/jquery-3.6.0.min.js"></script>
     <script type='text/javascript' src="js/product_script.js"></script>
 </head>
-<body onload="cartAction('loadpage', '')">
+<body onload="cartAction('loadpage', '', 'products')">
     <?php 
         $include_option = 'productos';
         include('view/header.php');

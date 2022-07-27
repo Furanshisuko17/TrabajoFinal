@@ -1,7 +1,8 @@
-function changeUrl(url) {
-    let site = url;
-    document.getElementsByName('main-content')[0].src = site;
-}
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    loadCartSize()
+});
+
 function loadCartSize(){
     jQuery.ajax({
         url: "/php/cart_size.php",
@@ -12,27 +13,27 @@ function loadCartSize(){
         error: function (){}
         });	
 }
-function cartAction(action, product_code) {
+function cartAction(action, product_code, page) {
     var queryString = "";
         if(action != "") {
             switch(action) {
                 case "add":
-                    queryString = 'action='+action+'&code='+ product_code;
+                    queryString = 'action='+action+'&code='+ product_code + '&page='+ page;
                     break;
                 case "remove":
-                    queryString = 'action='+action+'&code='+ product_code;
+                    queryString = 'action='+action+'&code='+ product_code  + '&page='+ page;
                     break;
                 case "empty":
-                    queryString = 'action='+action;
+                    queryString = 'action='+action  + '&page='+ page;
                     break;
                 case "addone":
-                    queryString = 'action='+action+'&code='+ product_code;
+                    queryString = 'action='+action+'&code='+ product_code  + '&page='+ page;
                     break;
                 case "removeone":
-                    queryString = 'action='+action+'&code='+ product_code;;
+                    queryString = 'action='+action+'&code='+ product_code  + '&page='+ page;;
                     break;
                 case "loadpage":
-                    queryString = 'action='+action;
+                    queryString = 'action='+action  + '&page='+ page;
                     break;
             }	 
         }
